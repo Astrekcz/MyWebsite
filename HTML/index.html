@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- nejdriv nadpis pod nadpisem strucny popis stranky a jeji ucel. Dale vyhledávající algortimus na nalezení filmů.
-nedjříve si ale musíme vytvořit kostru stranky -- grafické rozhraní s css a vyhledávající algortimus pres javascript.
-Prihlaseni na stranku by melo probihat tak ze se uzivatel zaregistruje pres email a heslo me se posle upozorneni na email
-jestli ho mam zaregistrovat. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astreks film Website</title>
-    <link rel="stylesheet" href="NavBar.css">
-
+    <meta name="description" content="A website dedicated to films, reviews, and trailers.">
+    <title>My Film Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-<nav class="navbar">
-    <div class="navdiv">
-        <div class="logo"><a href="#"> AstrekWebsite </a>  </div>
+<header>
+    <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <button><a href="#">SignIn</a></button>
-            <button><a href="#">SignUp</a></button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+    </nav>
+    <h1>Welcome to My Film Website</h1>
+</header>
 
-    </div>
+<main>
+    <section id="featured">
+        <h2>Featured Films</h2>
+        <article class="film">
+            <h3>Film Title 1</h3>
+            <img src="film1.jpg" alt="Film 1">
+            <p>Description of Film 1.</p>
+        </article>
+        <article class="film">
+            <h3>Film Title 2</h3>
+            <img src="film2.jpg" alt="Film 2">
+            <p>Description of Film 2.</p>
+        </article>
+        <!-- Add more film articles as needed -->
+    </section>
 
-</nav>
+    <section id="latest-reviews">
+        <h2>Latest Reviews</h2>
+        <article class="review">
+            <h3>Review Title 1</h3>
+            <p>Snippet of review content...</p>
+            <a href="review1.html">Read more</a>
+        </article>
+        <article class="review">
+            <h3>Review Title 2</h3>
+            <p>Snippet of review content...</p>
+            <a href="review2.html">Read more</a>
+        </article>
+        <!-- Add more review articles as needed -->
+    </section>
+</main>
 
+<footer>
+    <p>&copy; 2024 My Film Website. All rights reserved.</p>
+</footer>
 </body>
 </html>
